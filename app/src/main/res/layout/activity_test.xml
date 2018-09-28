@@ -31,6 +31,12 @@
         android:text="点我4"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/function5_btn"
+        android:layout_width="wrap_content"
+        android:text="点我5"
+        android:layout_height="wrap_content"/>
+
+    <Button
         android:id="@+id/report_btn"
         android:text="生成报告"
         android:layout_width="wrap_content"

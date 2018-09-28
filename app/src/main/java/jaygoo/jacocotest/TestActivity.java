@@ -30,7 +30,8 @@ import jaygoo.jacocohelper.JacocoHelper;
 public class TestActivity extends AppCompatActivity {
 
     //请修改为自己的项目路径，后面的文件夹如果没有可以通过./gradlew jacocoInit创建
-    private static String PROJECT_PATH = "/Users/mac/Github/JacocoTestHelper";
+//    private static String PROJECT_PATH = "/Users/mac/Github/JacocoTestHelper";
+    private static String PROJECT_PATH = "/Users/Morphin3/51Credit/JacocoTestHelper";
     static final String[] PERMISSIONS = new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -71,6 +72,12 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 function4();
+            }
+        });
+        findViewById(R.id.function5_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                function5();
             }
         });
 
@@ -117,4 +124,9 @@ public class TestActivity extends AppCompatActivity {
     private void function4() {
         Toast.makeText(getApplication(),"方法四",Toast.LENGTH_SHORT).show();
     }
+
+    private void function5() {
+        Toast.makeText(getApplication(),"方法五",Toast.LENGTH_SHORT).show();
+    }
+
 }
